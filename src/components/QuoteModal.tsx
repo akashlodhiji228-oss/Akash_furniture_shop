@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SHOWROOM_INFO } from '../data/showroomData.ts';
+import { SHOWROOM_INFO, INQUIRY_MATERIAL_OPTIONS } from '../data/showroomData.ts';
 import { X, Send, Copy, Check, MessageSquare, PhoneCall } from 'lucide-react';
 
 interface QuoteModalProps {
@@ -9,18 +9,7 @@ interface QuoteModalProps {
   initialCategory?: string;
 }
 
-const CATEGORY_OPTIONS = [
-  'Plywood & Structural Boards',
-  'Decorative Laminates & Acrylics',
-  'Hardware, Runners & Hinges',
-  'Modular Kitchen Cabinets & Baskets',
-  'Custom Wardrobes & Closets',
-  'Custom Wooden Furniture',
-  'Sofa Fabrics & Upholstery',
-  'Curtains & High-End Drapes',
-  'Designer Doors & Frames',
-  'Complete Interior Turnkey Material Package',
-];
+const CATEGORY_OPTIONS = INQUIRY_MATERIAL_OPTIONS;
 
 export const QuoteModal: React.FC<QuoteModalProps> = ({
   isOpen,

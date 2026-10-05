@@ -1,6 +1,6 @@
 import React from 'react';
 import { SHOWROOM_INFO } from '../data/showroomData.ts';
-import { ArrowUpRight, MessageSquare, ShieldCheck, Palette, MapPin } from 'lucide-react';
+import { ArrowUpRight, MessageSquare, ShieldCheck, Palette, MapPin, Hammer } from 'lucide-react';
 import { ImageWithFallback } from './ImageWithFallback.tsx';
 
 interface AboutSectionProps {
@@ -47,40 +47,52 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenQuote }) => {
           {/* Right Column: Editorial Copy & Pillars */}
           <div className="lg:col-span-7">
             <div className="text-xs font-semibold uppercase tracking-wider text-[#8C5D28]">
-              ABOUT AKASH PLY & HARDWARE
+              ABOUT AKASH PLY &amp; HARDWARE
             </div>
 
             <h2 className="text-2xl sm:text-4xl md:text-4xl font-extrabold text-[#14161B] mt-2.5 tracking-tight leading-tight">
-              A Trusted Destination for Quality Materials in Bhopal
+              From Material to Finished Furniture
             </h2>
 
             <p className="mt-4 text-base text-stone-600 leading-relaxed">
-              AKASH Ply & Hardware is a trusted destination for quality plywood, laminates, hardware fittings and modular solutions in Bhopal. We focus on providing reliable products, stylish designs and practical solutions for residential and commercial interior projects.
+              We provide a wide range of interior materials along with furniture and woodwork solutions, helping customers source everything they need for their home, office or commercial space.
             </p>
 
-            {/* 2 Core Pillars */}
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-5 rounded-xl bg-white border border-[#E7E2D8] shadow-2xs hover:border-[#DDD6CA] transition-colors">
-                <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] border border-[#DDD6CA] flex items-center justify-center text-[#8C5D28] mb-3">
+            {/* 3 Core Trust Pillars */}
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="p-4 rounded-xl bg-white border border-[#E7E2D8] shadow-2xs hover:border-[#DDD6CA] transition-colors">
+                <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] border border-[#DDD6CA] flex items-center justify-center text-[#8C5D28] mb-2.5">
                   <ShieldCheck className="w-4 h-4" />
                 </div>
-                <h3 className="text-sm font-bold text-[#14161B]">
-                  Dependable Durability
+                <h3 className="text-xs font-bold text-[#14161B]">
+                  Verified Quality
                 </h3>
-                <p className="text-xs text-stone-600 mt-1.5 leading-relaxed">
-                  Carefully sourced plywood and hardware built to handle real load and everyday use.
+                <p className="text-[11px] text-stone-600 mt-1 leading-relaxed">
+                  Calibrated plywood, authentic brands, and tested hardware for lasting durability.
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl bg-white border border-[#E7E2D8] shadow-2xs hover:border-[#DDD6CA] transition-colors">
-                <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] border border-[#DDD6CA] flex items-center justify-center text-[#8C5D28] mb-3">
+              <div className="p-4 rounded-xl bg-white border border-[#E7E2D8] shadow-2xs hover:border-[#DDD6CA] transition-colors">
+                <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] border border-[#DDD6CA] flex items-center justify-center text-[#8C5D28] mb-2.5">
+                  <Hammer className="w-4 h-4" />
+                </div>
+                <h3 className="text-xs font-bold text-[#14161B]">
+                  Custom Woodwork
+                </h3>
+                <p className="text-[11px] text-stone-600 mt-1 leading-relaxed">
+                  Tailored furniture manufacturing and on-site carpentry solutions for your room layout.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-xl bg-white border border-[#E7E2D8] shadow-2xs hover:border-[#DDD6CA] transition-colors">
+                <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] border border-[#DDD6CA] flex items-center justify-center text-[#8C5D28] mb-2.5">
                   <Palette className="w-4 h-4" />
                 </div>
-                <h3 className="text-sm font-bold text-[#14161B]">
-                  Modern Design Palette
+                <h3 className="text-xs font-bold text-[#14161B]">
+                  Complete Palette
                 </h3>
-                <p className="text-xs text-stone-600 mt-1.5 leading-relaxed">
-                  Contemporary laminate textures and modular accessories aligned with modern interior aesthetics.
+                <p className="text-[11px] text-stone-600 mt-1 leading-relaxed">
+                  Curtains, drapes, blinds, PU foam, and wallpapers for cohesive aesthetics.
                 </p>
               </div>
             </div>

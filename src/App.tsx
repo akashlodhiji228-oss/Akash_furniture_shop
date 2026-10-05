@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar.tsx';
 import { Hero } from './components/Hero.tsx';
 import { AboutSection } from './components/AboutSection.tsx';
-import { CategoriesSection } from './components/CategoriesSection.tsx';
+import { ServicesSection } from './components/ServicesSection.tsx';
+import { CompleteSolutionBanner } from './components/CompleteSolutionBanner.tsx';
+import { FurnitureWorkSection } from './components/FurnitureWorkSection.tsx';
 import { FeaturedProductsSection } from './components/FeaturedProductsSection.tsx';
+import { CompleteRangeSection } from './components/CompleteRangeSection.tsx';
 import { WhyChooseUsSection } from './components/WhyChooseUsSection.tsx';
 import { GallerySection } from './components/GallerySection.tsx';
 import { HowWeHelpSection } from './components/HowWeHelpSection.tsx';
@@ -27,14 +30,6 @@ export default function App() {
     setIsQuoteOpen(true);
   };
 
-  const handleCategoryExplore = (catKey: 'Plywood' | 'Laminates' | 'Hardware' | 'Modular') => {
-    setSelectedCatalogCategory(catKey);
-    const targetElement = document.getElementById('products');
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-[#14161B] selection:bg-[#EADBBE] selection:text-[#5E3B14] flex flex-col font-sans">
       {/* 3-Zone Navigation Header with Top Status Ticker */}
@@ -45,12 +40,19 @@ export default function App() {
         {/* Visual Hero */}
         <Hero onOpenQuote={() => handleOpenQuote()} />
 
-        {/* Editorial About Showroom */}
+        {/* Editorial About Showroom: From Material to Finished Furniture */}
         <AboutSection onOpenQuote={() => handleOpenQuote()} />
 
-        {/* 4 Primary Categories */}
-        <CategoriesSection
-          onSelectCategory={handleCategoryExplore}
+        {/* 10 Services / Products Compact Grid (Master Prompt Requirement 2) */}
+        <ServicesSection
+          onOpenQuoteWithCategory={(cat) => handleOpenQuote('', cat)}
+        />
+
+        {/* "Everything You Need. Under One Roof." (Master Prompt Requirement 3) */}
+        <CompleteSolutionBanner onOpenQuote={() => handleOpenQuote()} />
+
+        {/* Dedicated Custom Furniture & Woodwork (Master Prompt Requirement 4) */}
+        <FurnitureWorkSection
           onOpenQuoteWithCategory={(cat) => handleOpenQuote('', cat)}
         />
 
@@ -60,6 +62,11 @@ export default function App() {
           onSelectCategory={setSelectedCatalogCategory}
           onSelectProductForDetail={(prod) => setSelectedProduct(prod)}
           onOpenQuoteWithProduct={(prodName, cat) => handleOpenQuote(prodName, cat)}
+        />
+
+        {/* 19-Category Complete Product Spectrum & Materials Directory */}
+        <CompleteRangeSection
+          onOpenQuoteWithCategory={(cat) => handleOpenQuote('', cat)}
         />
 
         {/* 8-Category Architectural Gallery & Texture Explorer */}

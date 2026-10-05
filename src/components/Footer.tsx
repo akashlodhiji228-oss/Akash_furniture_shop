@@ -76,20 +76,33 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Product Categories */}
+          {/* Product Categories (All 19 Materials) */}
           <div className="lg:col-span-3">
-            <h4 className="text-xs uppercase font-bold tracking-wider text-white">
-              Materials &amp; Solutions
-            </h4>
-            <ul className="mt-4 space-y-2.5 text-xs text-stone-400">
-              <li>Calibrated BWP Marine Plywood</li>
-              <li>Decorative &amp; Acrylic Laminates</li>
-              <li>Hydraulic Soft-Close Hinges</li>
-              <li>Telescopic Drawer Channels</li>
-              <li>Modular Kitchen Baskets &amp; Pantries</li>
-              <li>Luxury Wardrobe Sliding Systems</li>
-              <li>Sofa Fabrics &amp; Belgian Drapes</li>
-              <li>Designer Teak Wood Entrance Doors</li>
+            <div className="flex items-center justify-between">
+              <h4 className="text-xs uppercase font-bold tracking-wider text-white">
+                Materials &amp; Solutions (19)
+              </h4>
+              <a href="#material-range" className="text-[11px] text-[#EADBBE] hover:underline font-medium">
+                View All →
+              </a>
+            </div>
+            <ul className="mt-4 grid grid-cols-2 gap-x-3 gap-y-2 text-[11px] text-stone-400">
+              <li><a href="#material-range" className="hover:text-white transition-colors">Plywood &amp; Boards</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Sunmica / Laminates</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Hardware &amp; Fittings</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Hinges &amp; Runners</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Kitchen Baskets</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Wardrobe Systems</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Sofa Fabrics</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Curtains &amp; Drapes</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Blinds</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Doors &amp; Flush Doors</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Wallpapers</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Mattress &amp; Pillows</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">PU Foam</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Coolers</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Lovers / Louvers</a></li>
+              <li><a href="#material-range" className="hover:text-white transition-colors">Custom Furniture</a></li>
             </ul>
           </div>
 

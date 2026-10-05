@@ -39,44 +39,52 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
               <span className="text-stone-600 font-semibold">FOUNDER: ANKUSH SHRIVASTAVA</span>
             </div>
 
-            {/* Headline */}
+            {/* Headline matching Master Prompt */}
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#14161B] tracking-tight leading-[1.12]">
-              Premium Plywood, <br className="hidden sm:inline" />
-              Laminates &amp; Hardware <br />
-              <span className="italic font-serif font-normal text-[#8C5D28]">for Better Spaces.</span>
+              Complete Interior Materials &amp; <br className="hidden sm:inline" />
+              <span className="italic font-serif font-normal text-[#8C5D28]">Furniture Solutions</span>
             </h1>
 
-            {/* Subheading */}
+            {/* Supporting text */}
             <p className="mt-5 text-base sm:text-lg text-stone-600 leading-relaxed max-w-xl">
-              Authentic calibrated plywood, designer surface laminates, precision architectural hardware, and modular kitchen solutions in Bhopal.
+              Quality plywood, laminates, hardware, furniture materials, curtains, doors and customised furniture solutions — all under one roof. Sourced for homes, offices, and commercial projects across Bhopal.
             </p>
 
             {/* Responsive Action Buttons */}
             <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
-              <button
-                onClick={onOpenQuote}
+              <a
+                href="#contact"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#181A20] hover:bg-stone-800 text-white font-semibold text-sm rounded-xl transition-all shadow-sm hover:shadow-md active:scale-98 cursor-pointer"
               >
-                <span>Get a Fast Quote</span>
+                <span>Send an Inquiry</span>
                 <ArrowRight className="w-4 h-4 text-[#EADBBE]" />
-              </button>
+              </a>
 
               <a
-                href="#products"
+                href="#services"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white hover:bg-stone-50 border border-[#DDD6CA] text-[#1F2228] font-semibold text-sm rounded-xl transition-colors shadow-2xs"
               >
-                <span>Browse Products</span>
+                <span>Explore Products</span>
               </a>
 
               <a
-                href={waUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 text-emerald-800 font-semibold text-sm rounded-xl transition-colors shadow-2xs"
+                href="#furniture-work"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-[#FAF6F0] hover:bg-[#F3ECE0] border border-[#D9C4A9] text-[#70481E] font-semibold text-sm rounded-xl transition-colors shadow-2xs"
               >
-                <MessageSquare className="w-4 h-4 text-emerald-600" />
-                <span>WhatsApp Ankush Sir</span>
+                <span>Discuss Furniture Work</span>
               </a>
+            </div>
+
+            {/* Quick Sourcing Badges */}
+            <div className="mt-6 flex flex-wrap items-center gap-1.5 text-[11px] text-stone-600">
+              <span className="font-bold text-[#8C5D28] mr-1">Under One Roof:</span>
+              <a href="#services" className="px-2 py-0.5 bg-white border border-stone-200 rounded-md hover:border-[#8C5D28] hover:text-[#8C5D28] transition-colors">Plywood &amp; Sunmica</a>
+              <a href="#services" className="px-2 py-0.5 bg-white border border-stone-200 rounded-md hover:border-[#8C5D28] hover:text-[#8C5D28] transition-colors">Hardware &amp; Fittings</a>
+              <a href="#services" className="px-2 py-0.5 bg-white border border-stone-200 rounded-md hover:border-[#8C5D28] hover:text-[#8C5D28] transition-colors">Modular Kitchens</a>
+              <a href="#furniture-work" className="px-2 py-0.5 bg-white border border-stone-200 rounded-md hover:border-[#8C5D28] hover:text-[#8C5D28] transition-colors">Custom Furniture Work</a>
+              <a href="#services" className="px-2 py-0.5 bg-white border border-stone-200 rounded-md hover:border-[#8C5D28] hover:text-[#8C5D28] transition-colors">Curtains &amp; Blinds</a>
+              <a href="#services" className="px-2 py-0.5 bg-white border border-stone-200 rounded-md hover:border-[#8C5D28] hover:text-[#8C5D28] transition-colors">Doors &amp; Louvers</a>
+              <a href="#services" className="px-2 py-0.5 bg-white border border-stone-200 rounded-md hover:border-[#8C5D28] hover:text-[#8C5D28] transition-colors">PU Foam &amp; Mattress</a>
             </div>
 
             {/* Trust Indicators */}

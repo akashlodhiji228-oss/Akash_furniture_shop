@@ -474,3 +474,164 @@ export const PROCESS_STEPS = [
     description: 'Get your orders fulfilled promptly with dependable quality so your project proceeds without delays.',
   },
 ];
+
+export const SERVICES_CATEGORIES = [
+  {
+    number: '01',
+    title: 'Plywood & Laminates',
+    description: 'Plywood, structural boards, decorative laminates and Sunmica.',
+    highlights: ['Commercial & BWP Marine Ply', 'Decorative 1.0mm Sunmica', 'High Gloss & Ultra Matte', 'Anti-Termite Calibrated Core'],
+    tag: 'Structural & Surfaces',
+  },
+  {
+    number: '02',
+    title: 'Hardware & Fittings',
+    description: 'Hardware, hinges, drawer runners and other furniture fittings.',
+    highlights: ['Soft-Close Hydraulic Hinges', 'Telescopic Drawer Runners', 'Solid Brass & PVD Handles', 'Mortise Locks & Tower Bolts'],
+    tag: 'Fittings & Mechanics',
+  },
+  {
+    number: '03',
+    title: 'Modular Kitchen',
+    description: 'Kitchen cabinets, baskets, accessories and complete modular kitchen solutions.',
+    highlights: ['SS 304 Pull-Out Wire Baskets', 'Corner Carousels & Tall Pantries', 'Waterproof BWP Carcass', 'Cutlery & Spice Organizers'],
+    tag: 'Modular Solutions',
+  },
+  {
+    number: '04',
+    title: 'Wardrobes & Furniture',
+    description: 'Custom wardrobes, closets and complete furniture work.',
+    highlights: ['Floor-to-Ceiling Sliding Systems', 'Fluted & Tinted Glass Shutters', 'Velvet Jewelry Organizers', 'Inbuilt Warm LED Profiles'],
+    tag: 'Storage & Closets',
+  },
+  {
+    number: '05',
+    title: 'Sofa & Upholstery',
+    description: 'Sofa materials, fabrics, PU foam and upholstery solutions.',
+    highlights: ['High Density PU Foam (32D/40D/50D)', 'Stain-Resistant Velvets', 'Textured Bouclé & Linens', 'Sofa Re-Upholstery Materials'],
+    tag: 'Comfort & Seating',
+  },
+  {
+    number: '06',
+    title: 'Curtains & Blinds',
+    description: 'Curtains, premium drapes and blinds.',
+    highlights: ['Thermal Acoustic Blackout Drapes', 'Belgian Sheer Linens', 'Zebra & Roller Window Blinds', 'Motorized Track Systems'],
+    tag: 'Window Treatment',
+  },
+  {
+    number: '07',
+    title: 'Doors & Louvers',
+    description: 'Designer doors, flush doors and louvers.',
+    highlights: ['Solid Teak Wood Entrance Doors', 'Waterproof Pine Flush Doors', 'Charcoal & Acoustic Louvers', 'Decorative Fluted Battens'],
+    tag: 'Entry & Accents',
+  },
+  {
+    number: '08',
+    title: 'Custom Furniture',
+    description: 'Custom wooden furniture and furniture work according to customer requirements.',
+    highlights: ['Bespoke Teak Dining Tables', 'TV Entertainment Media Units', 'Executive Study & Office Desks', 'Solid Wood King & Queen Beds'],
+    tag: 'Custom Craftsmanship',
+  },
+  {
+    number: '09',
+    title: 'Interior Materials',
+    description: 'Mattresses, pillows, wallpapers, coolers and other interior-related materials.',
+    highlights: ['Orthopedic & Memory Foam Mattresses', '3D Textured Designer Wallpapers', 'Heavy-Duty Commercial Coolers', 'Turnkey Adhesives & Fasteners'],
+    tag: 'Essential Supplies',
+  },
+  {
+    number: '10',
+    title: 'Complete Interior Solutions',
+    description: 'Complete material supply and furniture/interior work for residential and commercial spaces.',
+    highlights: ['End-to-End Material Packages', 'On-Site Carpentry Coordination', 'Direct Wholesale Consolidation', 'Turnkey Interior Procurement'],
+    tag: 'Turnkey Supply & Execution',
+  },
+];
+
+export const FURNITURE_WORK_ITEMS = [
+  {
+    name: 'Beds',
+    category: 'Bedroom',
+    description: 'Hydraulic storage beds, solid wood platform beds, upholstered designer headboards, and master suite beds.',
+    features: ['Hydraulic lift-up storage', 'Seasoned hardwood frame', 'Custom fabric headboards'],
+  },
+  {
+    name: 'Wardrobes',
+    category: 'Storage',
+    description: 'Floor-to-ceiling sliding wardrobes, open walk-in closets, tinted glass aluminum profiles, and modular carcasses.',
+    features: ['Anti-warp calibrated core', 'Soft-damped sliding gear', 'Integrated LED channels'],
+  },
+  {
+    name: 'TV Units',
+    category: 'Living Room',
+    description: 'Floating media consoles, acoustic fluted louver backdrops, concealed wire routing, and display shelving.',
+    features: ['Fluted wood panelling', 'Push-to-open drawers', 'Cable management system'],
+  },
+  {
+    name: 'Modular Kitchens',
+    category: 'Kitchen',
+    description: 'Parallel, L-shaped, and island kitchens crafted with boiling waterproof plywood and acrylic shutters.',
+    features: ['100% BWP Marine Ply carcass', 'SS 304 wire pullouts', 'Profile gola handleless design'],
+  },
+  {
+    name: 'Dining Tables',
+    category: 'Dining',
+    description: 'Live-edge solid teak wood dining centerpieces, 6 & 8 seater setups with architectural metal or wooden bases.',
+    features: ['Single-slab seasoned timber', 'Scratch-resistant matte sealer', 'Heavy structural stability'],
+  },
+  {
+    name: 'Study Tables',
+    category: 'Work & Study',
+    description: 'Ergonomic study desks, compact wall-mounted work pods, bookshelf integrations, and student study units.',
+    features: ['Cable pass-through grommets', 'Lockable storage drawers', 'Durable laminated top surface'],
+  },
+  {
+    name: 'Office Furniture',
+    category: 'Commercial',
+    description: 'Executive conference tables, modular workstation pods, storage credenzas, reception desks, and manager cabins.',
+    features: ['High-traffic resistant surfaces', 'Modular expandable design', 'Clean wire concealment'],
+  },
+  {
+    name: 'Custom Wooden Furniture',
+    category: 'Custom Craft',
+    description: 'One-off architectural bespoke furniture tailored precisely to your interior layout and designer specifications.',
+    features: ['Built to custom 3D drawings', 'Choice of veneers & finishes', 'Handcrafted precision joinery'],
+  },
+  {
+    name: 'Complete Furniture Work',
+    category: 'Full Turnkey',
+    description: 'End-to-end on-site and factory furniture execution for full apartments, villas, bungalows, and offices.',
+    features: ['Single-source accountability', 'Combined material + carpentry', 'Strict timeline adherence'],
+  },
+];
+
+export const INQUIRY_CHECKBOX_OPTIONS = [
+  'Plywood & Structural Boards',
+  'Laminates / Sunmica',
+  'Hardware & Fittings',
+  'Hinges & Drawer Runners',
+  'Modular Kitchen Accessories',
+  'Wardrobe / Closet Materials',
+  'Sofa Material & Upholstery',
+  'Curtains & Drapes',
+  'Blinds',
+  'Wallpapers',
+  'Doors',
+  'Louvers',
+  'Mattress',
+  'Pillows',
+  'PU Foam',
+  'Coolers',
+  'Furniture Work',
+  'Custom Wooden Furniture',
+  'Modular Kitchen Work',
+  'Wardrobe Work',
+  'Sofa / Upholstery Work',
+  'Complete Interior Furniture Work',
+  'Complete Interior Material Package',
+  'Other',
+] as const;
+
+export const INQUIRY_MATERIAL_OPTIONS = INQUIRY_CHECKBOX_OPTIONS;
+
+
