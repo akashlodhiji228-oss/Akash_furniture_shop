@@ -164,94 +164,52 @@ Attention: Ankush Shrivastava (Founder & MD)`;
               </div>
             </div>
 
-            {/* Interactive SVG Blueprint Vector Map */}
-            <div className="relative rounded-2xl overflow-hidden border border-[#DDD6CA] bg-[#EFEAE2] shadow-xs p-5">
-              <div className="flex items-center justify-between text-xs font-medium text-stone-700 mb-3">
-                <div className="flex items-center gap-1.5 font-semibold text-stone-900">
-                  <MapPin className="w-4 h-4 text-[#8C5D28]" />
-                  <span>Bhopal, MP · 462001</span>
+            {/* ============================================================== */}
+            {/* INTERACTIVE GOOGLE MAP CARD (EXACT MATCH TO USER SCREENSHOT)  */}
+            {/* ============================================================== */}
+            <div className="bg-white rounded-2xl border border-[#DDD6CA] overflow-hidden shadow-xs">
+              {/* Top Bar */}
+              <div className="px-4 py-3 bg-[#FAF8F5] border-b border-[#E7E2D8] flex items-center justify-between">
+                <div className="flex items-center gap-2 text-stone-900 font-semibold text-xs sm:text-sm">
+                  <MapPin className="w-4 h-4 text-stone-700 shrink-0" />
+                  <span>Interactive Map: Hamidia Road, Bhopal</span>
                 </div>
-                <span className="text-[11px] text-stone-500">
-                  Bhopal Junction (1.5 km) →
-                </span>
-              </div>
 
-              {/* Vector SVG Blueprint */}
-              <div className="relative w-full h-52 bg-[#EBE4D8] rounded-xl overflow-hidden border border-stone-300/80">
-                <svg
-                  className="w-full h-full select-none"
-                  viewBox="0 0 600 260"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {/* Subtle Grid */}
-                  <defs>
-                    <pattern id="blueprint-grid" width="30" height="30" patternUnits="userSpaceOnUse">
-                      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#DFD7C7" strokeWidth="0.8" />
-                    </pattern>
-                  </defs>
-                  <rect width="600" height="260" fill="url(#blueprint-grid)" />
-
-                  {/* Hamidia Road (Main Horizontal Arterial) */}
-                  <line x1="20" y1="120" x2="580" y2="135" stroke="#FFFFFF" strokeWidth="18" strokeLinecap="round" />
-                  <line x1="20" y1="120" x2="580" y2="135" stroke="#DDD4C4" strokeWidth="2" strokeDasharray="6 4" />
-                  <text x="70" y="112" fill="#7A6F5E" fontSize="10" fontWeight="bold" letterSpacing="1">
-                    HAMIDIA ROAD
-                  </text>
-
-                  {/* Bharat Talkies Road (Cross Avenue) */}
-                  <line x1="390" y1="20" x2="390" y2="240" stroke="#FFFFFF" strokeWidth="14" strokeLinecap="round" />
-                  <text x="280" y="45" fill="#7A6F5E" fontSize="9" fontWeight="bold" letterSpacing="0.8">
-                    BHARAT TALKIES ROAD
-                  </text>
-
-                  {/* Connecting Lane into Sartaj Patel Nagar */}
-                  <line x1="230" y1="125" x2="230" y2="210" stroke="#FFFFFF" strokeWidth="10" strokeLinecap="round" />
-                  <line x1="160" y1="205" x2="310" y2="205" stroke="#FFFFFF" strokeWidth="10" strokeLinecap="round" />
-
-                  {/* Landmark: Shakti Ali Hospital */}
-                  <rect x="180" y="150" width="70" height="34" rx="4" fill="#E4DCD0" stroke="#C4B9A7" strokeWidth="1" />
-                  <text x="215" y="167" fill="#6A5F50" fontSize="8" fontWeight="600" textAnchor="middle">
-                    Shakti Ali Hospital
-                  </text>
-                  <circle cx="215" cy="177" r="3" fill="#D9534F" />
-
-                  {/* Landmark: Bharat Talkies */}
-                  <rect x="410" y="80" width="74" height="28" rx="4" fill="#E4DCD0" stroke="#C4B9A7" strokeWidth="1" />
-                  <text x="447" y="97" fill="#6A5F50" fontSize="8" fontWeight="600" textAnchor="middle">
-                    Bharat Talkies
-                  </text>
-
-                  {/* Store Location Pin Card */}
-                  <g transform="translate(140, 60)">
-                    <rect x="0" y="0" width="190" height="46" rx="8" fill="#181A20" opacity="0.95" />
-                    <text x="12" y="19" fill="#EADBBE" fontSize="10" fontWeight="bold">
-                      AKASH Ply &amp; Hardware
-                    </text>
-                    <text x="12" y="34" fill="#C9C4BC" fontSize="8">
-                      H.No. 28, Sartaj Patel Nagar
-                    </text>
-                    <polygon points="95,46 100,54 105,46" fill="#181A20" />
-                  </g>
-
-                  {/* Pulsing Pin Marker */}
-                  <circle cx="240" cy="120" r="10" fill="#8C5D28" opacity="0.3" className="animate-ping" />
-                  <circle cx="240" cy="120" r="5" fill="#8C5D28" stroke="#FFFFFF" strokeWidth="2" />
-                </svg>
-              </div>
-
-              {/* Bottom Card Bar */}
-              <div className="mt-3 flex items-center justify-between text-xs text-stone-600">
-                <span>Behind Shakti Ali Hospital · Near Bharat Talkies</span>
                 <a
                   href={SHOWROOM_INFO.googleMapsDirectionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-stone-900 hover:text-[#8C5D28] inline-flex items-center gap-1"
+                  className="flex items-center gap-1.5 text-xs font-semibold text-stone-700 hover:text-[#8C5D28] transition-colors group"
                 >
-                  <span>Open in Google Maps</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
+                  <span>Open Full Map</span>
+                  <Send className="w-3.5 h-3.5 text-stone-600 group-hover:text-[#8C5D28] -rotate-45 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
+              </div>
+
+              {/* Interactive Google Map Iframe */}
+              <div className="relative w-full h-80 sm:h-96 bg-stone-100">
+                <iframe
+                  title="AKASH Ply & Hardware Bhopal Showroom Map"
+                  src="https://maps.google.com/maps?q=H.No.+28+Sartaj+Patel+Nagar+Colony+Near+Bharat+Talkies+Hamidia+Road+Bhopal+462001&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+
+              {/* Bottom Bar */}
+              <div className="px-4 py-3 bg-[#FAF8F5] border-t border-[#E7E2D8] flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-stone-700">
+                <div className="flex items-center gap-2">
+                  <span className="text-red-500 font-bold text-sm leading-none shrink-0" aria-hidden="true">📍</span>
+                  <span>
+                    Located Behind Shakti Ali Hospital, Near Bharat Talkies, Hamidia Road, Bhopal
+                  </span>
+                </div>
+
+                <div className="text-stone-800 font-medium shrink-0">
+                  Walk-ins Welcome Everyday
+                </div>
               </div>
             </div>
           </div>
