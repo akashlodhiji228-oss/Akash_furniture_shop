@@ -3,9 +3,9 @@ import { CategoryCard, ProductItem, GalleryItem } from '../types/index.ts';
 export const SHOWROOM_INFO = {
   name: 'AKASH Ply & Hardware',
   tagline: 'Architectural Materials & Bespoke Interior Solutions for Distinguished Spaces.',
-  address: 'H.No. 28, Sartaj Patel Nagar Colony, Behind Shakti Ali Hospital, Near Bharat Talkies, Hamidia Road, Bhopal, Madhya Pradesh – 462001',
-  locationBrief: 'Near Bharat Talkies · Behind Shakti Ali Hospital · Hamidia Road, Bhopal',
-  pin: '462001',
+  address: 'H. No. 28, Near Shakir Ali Hospital, Sardar, Sher Shah Suri Nagar, Patel Nagar Colony, Patel Nagar, Peer Gate Area, Bhopal, Madhya Pradesh 462042',
+  locationBrief: 'Near Shakir Ali Hospital · Patel Nagar Colony · Bhopal',
+  pin: '462042',
   managingDirector: {
     name: 'Ankush Shrivastava',
     role: 'Founder & Managing Director',
@@ -17,8 +17,9 @@ export const SHOWROOM_INFO = {
   phoneRaw: '917999960616',
   email: 'aakashplyandhardware@gmail.com',
   timings: 'Monday – Sunday: 10:00 AM – 8:30 PM (Open 7 Days)',
-  timingStatus: 'Showroom Open · 10:00 AM – 8:30 PM · Bharat Talkies, Bhopal',
-  googleMapsDirectionsUrl: 'https://maps.google.com/?q=H.No.+28+Sartaj+Patel+Nagar+Colony+Near+Bharat+Talkies+Hamidia+Road+Bhopal+462001',
+  timingStatus: 'Showroom Open · 10:00 AM – 8:30 PM · Patel Nagar, Bhopal',
+  googleMapsDirectionsUrl: 'https://www.google.com/maps/place/aakash+ply+and+hardware/@23.2609867,77.4099198,19.68z/data=!4m7!3m6!1s0x397c69e2e2ddb4d7:0x9ed4fcb7b2c8e41c!4b1!8m2!3d23.2611224!4d77.4097772!16s%2Fg%2F11zck5p4zv?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D',
+  instagramUrl: 'https://www.instagram.com/akash_ply_hardware/',
 };
 
 export const CATEGORIES_DATA: CategoryCard[] = [

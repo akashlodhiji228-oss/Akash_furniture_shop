@@ -209,7 +209,7 @@ Attention: Ankush Shrivastava (Founder & MD)`;
               <div className="px-4 py-3 bg-[#FAF8F5] border-b border-[#E7E2D8] flex items-center justify-between">
                 <div className="flex items-center gap-2 text-stone-900 font-semibold text-xs sm:text-sm">
                   <MapPin className="w-4 h-4 text-stone-700 shrink-0" />
-                  <span>Interactive Map: Hamidia Road, Bhopal</span>
+                  <span>Interactive Map: Patel Nagar, Bhopal</span>
                 </div>
 
                 <a
@@ -227,7 +227,7 @@ Attention: Ankush Shrivastava (Founder & MD)`;
               <div className="relative w-full h-80 sm:h-96 bg-stone-100">
                 <iframe
                   title="AKASH Ply & Hardware Bhopal Showroom Map"
-                  src="https://maps.google.com/maps?q=H.No.+28+Sartaj+Patel+Nagar+Colony+Near+Bharat+Talkies+Hamidia+Road+Bhopal+462001&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=aakash+ply+and+hardware+Bhopal&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   className="w-full h-full border-0"
                   loading="lazy"
                   allowFullScreen
@@ -240,7 +240,7 @@ Attention: Ankush Shrivastava (Founder & MD)`;
                 <div className="flex items-center gap-2">
                   <span className="text-red-500 font-bold text-sm leading-none shrink-0" aria-hidden="true">📍</span>
                   <span>
-                    Located Behind Shakti Ali Hospital, Near Bharat Talkies, Hamidia Road, Bhopal
+                    Located Near Shakir Ali Hospital, Sardar, Sher Shah Suri Nagar, Patel Nagar Colony, Bhopal
                   </span>
                 </div>
 

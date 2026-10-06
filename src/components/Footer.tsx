@@ -1,6 +1,6 @@
 import React from 'react';
 import { SHOWROOM_INFO } from '../data/showroomData.ts';
-import { MapPin, Phone, Mail, Clock, MessageSquare, ArrowUpRight } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageSquare, ArrowUpRight, Instagram } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -33,6 +33,15 @@ export const Footer: React.FC = () => {
               >
                 <Phone className="w-3.5 h-3.5" />
                 <span>Direct Line: {SHOWROOM_INFO.managingDirector.phone}</span>
+              </a>
+              <a
+                href={SHOWROOM_INFO.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-[#EADBBE] hover:underline mt-1"
+              >
+                <Instagram className="w-3.5 h-3.5" />
+                <span>Follow us on Instagram</span>
               </a>
             </div>
           </div>
@@ -146,21 +155,21 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Bar: Clean Copyright with Ankush Shrivastava */}
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
-          <div>
+        {/* Bottom Bar: Clean Copyright & Credits */}
+        <div className="mt-8 pt-6 border-t border-stone-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+          <div className="text-center md:text-left">
             © {new Date().getFullYear()} AKASH Ply &amp; Hardware, Bhopal. All rights reserved.
           </div>
 
-          <div className="flex items-center gap-2 text-stone-400 text-xs">
-            <span>Direct Inquiries: <strong className="text-stone-200 font-semibold">{SHOWROOM_INFO.managingDirector.name}</strong></span>
-            <span aria-hidden="true">·</span>
-            <a
-              href={`tel:+${SHOWROOM_INFO.managingDirector.phoneRaw}`}
-              className="text-[#EADBBE] hover:underline"
-            >
-              {SHOWROOM_INFO.managingDirector.phone}
-            </a>
+          {/* Developer Credit */}
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-sm text-stone-300">
+            <span>
+              Website provided by <a href="https://auraforge.site/" target="_blank" rel="noopener noreferrer" className="font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-[#EADBBE] hover:opacity-80 transition-opacity uppercase tracking-wider text-base sm:text-lg ml-1">AuraForge</a>
+            </span>
+            <span className="hidden sm:inline text-stone-600" aria-hidden="true">|</span>
+            <span>
+              Contact: <strong className="font-bold text-white tracking-wider text-base ml-1">7869461895</strong>
+            </span>
           </div>
         </div>
       </div>
